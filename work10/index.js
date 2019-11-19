@@ -19,7 +19,7 @@ function monkey(){
             monkey.push(head)
         }
     }
-    document.getElementById('monkeykings').innerText=monkey[0]
+    document.getElementById('monkeyking').innerText=monkey[0]
 }
 function stat(){
     let str = document.getElementById("str").value
