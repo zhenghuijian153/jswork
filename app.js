@@ -16,13 +16,13 @@ const openDefultBrowser=function(url){
     var exec=require('child_process').exec;
     switch (process.platform){
         case"darwin":
-           exec('open'+url);
+           exec('open '+url);
            break;
         case "win32":
-            exec('start'+url);
+            exec('start '+url);
             break;
         default:
             exec('xdg-open',[url]);
     }
 }
-openDefultBrowser('http://127.0.0.1:8080')
+openDefultBrowser('http://localhost:8080')
